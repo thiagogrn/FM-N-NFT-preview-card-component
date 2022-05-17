@@ -1,0 +1,242 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  font-size: 18px;
+  background: #0d192b;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.container .card {
+  background-color: #14253d;
+  width: 32rem;
+  padding: 2.4rem;
+  border-radius: 1.5rem;
+}
+
+.container .card .nft-image {
+  position: relative;
+}
+
+.container .card .nft-image div {
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 255, 247, 0.6);
+  width: 100%;
+  height: 27.2rem;
+  z-index: 999;
+  opacity: 0;
+  border-radius: 0.8rem;
+}
+
+.container .card .nft-image div img {
+  width: auto;
+  height: auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.container .card .nft-image div:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.container .card .nft-image img {
+  border-radius: 0.8rem;
+  width: 100%;
+  height: 100%;
+}
+
+.container .card .title {
+  color: white;
+  margin-top: 2rem;
+  font-size: 1.1rem;
+}
+
+.container .card .title :hover {
+  cursor: pointer;
+  color: #00fff7;
+}
+
+.container .card .text {
+  font-weight: 300;
+  color: #8bacda;
+  margin-top: 1.5rem;
+  font-size: 1.58rem;
+}
+
+.container .card .text .t2 {
+  margin-top: 0.5rem;
+}
+
+.container .card .information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #2f415b;
+  padding: 1.85rem 0;
+}
+
+.container .card .information .price {
+  color: #00fff7;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5rem;
+}
+
+.container .card .information .price .img-eth {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 0.6rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .card .information .price .img-eth img {
+  width: 100%;
+  height: 100%;
+}
+
+.container .card .information .time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #8bacda;
+  font-size: 1.5rem;
+}
+
+.container .card .information .time .time-img {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .card .information .time .time-img img {
+  margin-right: 0.45rem;
+  width: 100%;
+  height: 100%;
+}
+
+.container .card .creator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1.5rem;
+}
+
+.container .card .creator .creator-image {
+  border: 1px solid white;
+  margin-right: 1.6rem;
+  border-radius: 50%;
+  width: 3.3rem;
+  height: 3.3rem;
+}
+
+.container .card .creator .creator-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.container .card .creator p {
+  color: #8bacda;
+  display: block;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.container .card .creator p span {
+  color: white;
+}
+
+.container .card .creator p span:hover {
+  cursor: pointer;
+  color: #00fff7;
+}
+
+footer {
+  display: none;
+}
+
+@media screen and (min-width: 1440px) {
+  .container .card {
+    width: 35rem;
+  }
+  .container .card .nft-image div {
+    height: 30.2rem;
+  }
+  .container .card .title {
+    margin-top: 1.6rem;
+  }
+  .container .card .text {
+    margin-top: 1.8rem;
+    font-size: 1.8rem;
+    margin-bottom: 0.2rem;
+  }
+  .container .card .text .t2 {
+    margin-top: 0.35rem;
+  }
+  .container .card .information {
+    padding: 2.35rem 0;
+  }
+  .container .card .information .price {
+    font-size: 1.6rem;
+  }
+  .container .card .information .time {
+    font-size: 1.6rem;
+  }
+  .container .card .creator {
+    margin-top: 1.75rem;
+    margin-bottom: 1rem;
+  }
+  .container .card .creator p {
+    font-size: 1.65rem;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,48 @@
+@media screen and (min-width: 1440px) {
+    .container {
+        .card {
+            width: 35rem;
+
+            .nft-image {
+                div {
+                    height: 30.2rem;
+                }
+            }
+
+            .title {
+                margin-top: 1.6rem;
+            }
+            
+            .text {
+                margin-top: 1.8rem;
+                font-size: 1.8rem;
+                margin-bottom: 0.2rem;
+
+                .t2 {
+                    margin-top: 0.35rem;
+                }
+            }
+
+            .information {
+            padding: 2.35rem 0;
+
+                .price {
+                    font-size: 1.6rem;
+                }
+
+                .time {
+                    font-size: 1.6rem;
+                }
+            }
+
+            .creator {
+                margin-top: 1.75rem;
+                margin-bottom: 1rem;
+
+                p {
+                    font-size: 1.65rem;
+                }
+            }
+        }
+    }
+}

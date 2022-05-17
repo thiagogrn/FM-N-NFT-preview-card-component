@@ -1,0 +1,158 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+
+    .card {
+        background-color: $very-dark-blue-card-BG;
+        width: 32rem;
+        padding: 2.4rem;
+        border-radius: 1.5rem;
+
+        .nft-image {
+        position: relative;
+
+            div {
+                position: absolute;
+                top: 0;
+                background-color:hsla(178, 100%, 50%, 0.6);
+                width: 100%;
+                height: 27.2rem;
+                z-index: 999;
+                opacity: 0;
+                border-radius: 0.8rem;
+
+                img {
+                    width: auto;
+                    height: auto;
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+            
+            div:hover {
+                cursor: pointer;
+                opacity: 1;
+            }
+
+            img {
+                border-radius: 0.8rem;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        
+        .title {
+            color: $white;
+            margin-top: 2rem;
+            font-size: 1.1rem;
+        }
+
+        .title :hover {
+            cursor: pointer;
+            color: $cyan;
+        }
+
+        .text {
+            font-weight: 300;
+            color: $soft-blue;
+            margin-top: 1.5rem;
+            font-size: 1.58rem;
+
+            .t2 {
+                margin-top: 0.5rem;
+            }
+        }
+
+        .information {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid $very-dark-blue-line;
+        padding: 1.85rem 0;
+            
+            .price {
+                color: $cyan;
+                font-weight: 600;
+                display: flex;
+                align-items: center;
+                font-size: 1.5rem;
+
+                .img-eth {
+                    display: flex;
+                    margin-right: 0.6rem;
+                    align-items: center;
+                    justify-content: center;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+            
+
+            .time {
+            display: flex;
+            align-items: center;
+            color: $soft-blue;
+            font-size: 1.5rem;
+
+                .time-img {
+                    display: inline-flex;
+                    align-items: center;
+                    
+                    img {
+                        margin-right: 0.45rem;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+
+        .creator {
+        display: flex;
+        align-items: center;
+        margin-top: 1.5rem;
+        
+            .creator-image {
+                border: 1px solid $white;
+                margin-right: 1.6rem;
+                border-radius: 50%;
+                width: 3.3rem;
+                height: 3.3rem;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            p {
+                color: $soft-blue;
+                display: block;
+                text-align: center;
+                font-size: 1.5rem;
+            }
+
+            p span {
+                color: $white;
+            }
+
+            p span:hover {
+                cursor: pointer;
+                color: $cyan;
+            }
+        }
+
+
+    }
+}
+
+footer {
+    display: none;
+}
